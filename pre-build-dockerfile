@@ -4,6 +4,9 @@ source "$PLUGIN_CORE_AVAILABLE_PATH/common/functions"
 
 DOKKU_ENV_PREFIX=${DOKKU_DOCKER_ENV_VAR_PREFIX:-dokku}
 
+echo EXPORTING DOKKU ENVIRONMENT VARIABLES
 set > ".${DOKKU_ENV_PREFIX}.env"
-echo Exported Environment Variables to ".${DOKKU_ENV_PREFIX}.env"
+echo
+echo ---> Exported Environment Variables to ".${DOKKU_ENV_PREFIX}.env"
+echo
 
