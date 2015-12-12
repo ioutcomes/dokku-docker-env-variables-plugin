@@ -1,0 +1,5 @@
+[plugin]
+name = "dokku-docker-env-variables-plugin"
+description = "Export dokku environment variables to .dokku.env for use in Dockerfile Build"
+version = "0.0.1"
+[plugin.config]

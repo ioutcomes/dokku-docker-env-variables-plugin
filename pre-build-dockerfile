@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
+source "$PLUGIN_CORE_AVAILABLE_PATH/common/functions"
+
+DOKKU_ENV_PREFIX=${DOKKU_DOCKER_ENV_VAR_PREFIX:-dokku}
+
+set > ".${DOKKU_ENV_PREFIX}.env"
+echo Exported Environment Variables to ".${DOKKU_ENV_PREFIX}.env"
+
