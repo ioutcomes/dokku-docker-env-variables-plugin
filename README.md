@@ -10,7 +10,9 @@ RUN if [ -f /<WORKDIR>/.dokku.env ]; then set -a && . /<WORKDIR>/.dokku.env; fi
 ```
 
 ## Installation
+```bash
 sudo dokku plugin:install https://github.com/ioutcomes/dokku-docker-env-variables-plugin
+```
 
 ## Requirements
 * Dokku version `0.4.5` or higher
